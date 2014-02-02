@@ -1,0 +1,42 @@
+button{
+	margin: 0;
+	padding: 0;
+}
+#calculadora{
+	width: 400px;
+	height: 400px;
+	border: 1px solid #000;
+}
+
+.tecla{
+	padding: 10px;
+	border: 1px solid #000;
+	width: 82px;
+	text-align: center;
+	font-size: 2rem;
+	display: inline-block;
+	margin-left: 6px;
+}
+.tecladoble{
+	padding: 10px;
+	border: 1px solid #000;
+	width: 174px;
+	text-align: center;
+	font-size : 2rem;
+	display: inline-block;
+	margin-left: 6px;
+}
+
+.filasup, .filamedio, .filainf, .filabottom, #resultado, .filaresul{
+	margin: 10px 0 0 10px;
+}
+
+#resultado{
+	width: 157px;
+    padding: 30px;
+	border: 1px solid #000;
+	margin-left: 16px;
+	
+	display: inline-block;
+
+}
