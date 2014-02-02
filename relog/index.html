@@ -1,0 +1,39 @@
+<!doctype HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Relog sencillo con jquery</title>
+	
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script>
+$(document).ready(function(){
+  window.setInterval(function(){
+  var horas=new Date();
+  $('.horas').html(horas.getHours());
+  $('.minutos').html(horas.getMinutes());
+    var segundos=horas.getSeconds();
+    if(segundos<10){
+ $('.segundos').html("0"+horas.getSeconds(),5000);}
+    else{
+ $('.segundos').html(horas.getSeconds(),5000);}     })
+  });
+	</script>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="relog">
+  <div class="horas">
+    
+  </div>
+  <div class="minutos">
+    
+  </div>
+  <div class="segundos">
+    
+  </div>
+</div>
+</body>
+</html>

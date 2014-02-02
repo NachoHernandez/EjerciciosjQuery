@@ -1,0 +1,20 @@
+.relog{
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid red
+}
+.horas{
+  margin: 100px 0 0 70px;
+  font-size: 5rem;
+    display: inline-block;
+}
+.horas:after, .minutos:after{
+  content:":";
+  margin: 0 0 10px 10px;
+}
+.minutos, .segundos{
+  display: inline-block;
+  font-size: 5rem;
+}
