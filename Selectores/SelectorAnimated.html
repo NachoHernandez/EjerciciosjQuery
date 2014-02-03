@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector :animated</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+#circulo{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50%;
+ display: inline-block
+}
+
+#pulsa{
+  display: inline-block;
+  position:absolute;
+  margin: 40px;
+}
+	</style>
+</head>
+<body>
+	<div id="circulo">
+  
+</div>
+
+<button id="pulsa">Pulsar</button>
+<p>
+	Aquí vemos como al pulsar el botón, el elemento animado es seleccionado y aparece un borde rojo alrededor. Todo ello seleccionado con el selector :animated
+</p>
+	<script>
+$(document).ready(function(){
+  $("#pulsa").click(function(){
+  $("div:animated").css({border: "10px solid red"})
+  });
+  
+  var mover= function(){
+    $("#circulo").slideToggle("slow",mover);
+  };
+ 
+  mover()
+});
+	</script>
+</body>
+</html>

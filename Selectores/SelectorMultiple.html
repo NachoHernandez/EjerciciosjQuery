@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector Multiple</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		a{
+ 		 	text-decoration: none;
+ 		 	display: block;
+		}
+
+span{
+  font-weight: bold;
+  font-style: italic;
+}
+	</style>
+</head>
+<body>
+	<a href="" id="Manual" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut facilis nisi ipsa  quia odio.</a>
+	<a href="" id="Automatico">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut facilis nisi ipsa  quia odio.</a>
+	<a href="" id="Manual">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut facilis nisi ipsa  quia odio.</a>
+
+	<p>Podemos encadenar varios elementos a la hora de seleccionarlos, basta con separalos con comas</p>
+	<p>En este caso, hemos puesto los dos id de nuestros enlaces, por lo que se colorean en rojo los tres</p>
+	<script>
+		$(document).ready(function(){
+ 	 		$("#Manual,#Automatico").css("color","red");
+		})
+	</script>
+</body>
+</html>

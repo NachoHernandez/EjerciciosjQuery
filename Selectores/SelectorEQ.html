@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector eq()</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit hic numquam. Dolorum repellendus nostrum voluptate fugiat iusto. Velit esse tempora mollitia iste omnis accusantium earum repudiandae aliquid non minima saepe!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nesciunt porro quaerat deserunt natus. Doloremque voluptatem officiis architecto ratione vero impedit blanditiis laudantium aliquam consequatur deleniti nihil maxime soluta porro.</p>
+	<p id="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius fugiat fuga consectetur commodi itaque fugit animi nesciunt quas quasi nemo veniam nam cumque quo nulla modi recusandae asperiores distinctio accusamus.</p>
+	<p> El selector :eq() digamos que es como un indice de un grupo de elementos, en nuestro caso hemos seleccionado el tercer parrafo, de los tres que hay en la página y le hemos cambiado el color a rojo</p>
+	<hr>
+	<p>Hay que tener en cuenta que este indice empieza a contar desde el número 0 y no desde 1, de ahí que el número que hemos puesto para seleccionar el tercer parrafo sea el 2.</p>
+	<script>
+		$(document).ready(function(){
+  		$("p:eq(2)").css("color","red") 
+		})
+	</script>
+</body>
+</html>

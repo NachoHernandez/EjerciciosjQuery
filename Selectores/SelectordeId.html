@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector de Atributo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		a{
+ 		 	text-decoration: none;
+ 		 	display: block;
+		}
+
+span{
+  font-weight: bold;
+  font-style: italic;
+}
+	</style>
+</head>
+<body>
+	<a href="" id="Manual" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut facilis nisi ipsa  quia odio.</a>
+	<a href="" id="Automatico">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut facilis nisi ipsa  quia odio.</a>
+	<a href="" id="Manual">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut facilis nisi ipsa  quia odio.</a>
+
+	<p><span>Selector de Id: </span>Selecciona un elemento por su Id, como podemos comprobar el elemento del medio no tiene el mismo <span>Id</span>, por lo tanto no es seleccionado para cambiar su color de fuente.
+	<script>
+		$(document).ready(function(){
+ 	 		$("#Manual").css("color","red");
+		})
+	</script>
+</body>
+</html>
