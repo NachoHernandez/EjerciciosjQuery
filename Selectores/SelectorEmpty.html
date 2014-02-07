@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector :Empty</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		.cuadro{
+ 			 width: 100px;
+ 			 height: 100px;
+ 			 border: 2px solid #000;
+ 			 display: inline-block;
+  			text-align: center;.
+  			color: red;
+  			font-weight : bold;
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="cuadro1" class="cuadro">cuadro1</div>
+<div id="cuadro2" class="cuadro"></div>
+  <div id="cuadro3" class="cuadro">cuadro3</div>
+<div id="cuadro4" class="cuadro"></div>
+
+<p>Lo que hemos hecho es seleccionar los dos cuadros que no tienen ningun elemento "hijo" con el selector :empty</p>
+	<script>
+		$(document).ready(function(){
+  		var answer=$(".cuadro:empty");
+  if(answer){
+   answer.text("vacio");
+    answer.css({"backgroundColor":"#ccc"});
+    
+  }
+		})
+	</script>
+</body>
+</html>

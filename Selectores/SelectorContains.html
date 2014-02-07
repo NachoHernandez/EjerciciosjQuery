@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector :contains</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<div id="contenedor">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit hic numquam. Dolorum repellendus nostrum voluptate alicante fugiat iusto. Velit esse tempora mollitia iste omnis accusantium earum repudiandae aliquid non minima saepe!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nesciunt porro quaerat deserunt natus. Doloremque voluptatem officiis architecto ratione vero impedit blanditiis laudantium aliquam consequatur deleniti nihil maxime soluta porro.</p>
+	<p >Lorem ipsum dolor sit amet, consectetur alicante adipisicing elit. Eius fugiat fuga consectetur commodi itaque fugit animi nesciunt quas quasi nemo veniam nam cumque quo nulla modi recusandae asperiores distinctio accusamus.</p>
+	<p> El selector :contains('') selecciona un elemento si en él se encuentra el texto que indicamos</p>
+	<p>En este caso hemos seleccionado dos parrafos por que en ellos se encuentra la palabra alicante</p>
+	</div>
+	<script>
+		$(document).ready(function(){
+  		$("p:contains('alicante')").css("color","red") 
+		})
+	</script>
+</body>
+</html>
