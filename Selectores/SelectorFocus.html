@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector :focus</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<input type="text" tabindex="1" class="clase"/>
+	<input type="text" tabindex="2" class="clase"/>
+	<input type="text" tabindex="3" class="clase" />
+	
+	<script>
+		$(document).ready(function(){
+  		$('input').is(":focus").css("width","200px") 
+		})
+	</script>
+</body>
+</html>
