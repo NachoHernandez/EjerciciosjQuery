@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector :Empty</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		.cuadro{
+ 			 width: 100px;
+ 			 height: 100px;
+ 			 border: 2px solid #000;
+ 			 display: inline-block;
+  			text-align: center;.
+  			color: red;
+  			font-weight : bold;
+}
+
+
+	</style>
+</head>
+<body>
+	<button>boton1</button>
+<button>boton2</button>
+<button>boton3</button>
+
+<p>Lo que hemos hecho es seleccionar los botones con el selector :button, y les hemos cambiado el color de fondo</p>
+	<script>
+		$(document).ready(function(){
+  var answer=$(":button");
+  if(answer){
+    answer.css({"backgroundColor":"#666","color":"white"});
+    
+    
+  }
+  
+})
+	</script>
+</body>
+</html>

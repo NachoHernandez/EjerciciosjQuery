@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector :checked</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<form>
+  <input type="button" value="Input Button">
+  <input type="checkbox" checked>
+ 
+  <input type="checkbox" >
+  
+</form>
+
+<p>Hemos seleccionado los elementos que sean inputs del tipo checkbox y que esten seleccionados, les hemos añadido un contenedor y hemos aplicado estilos a este.</p>
+	<script>
+		$(document).ready(function(){
+ var input = $( "form input:checked" )
+  .wrap( "<span></span>" )
+  .parent()
+  .css({
+    background: "yellow",
+    border: "3px red solid"
+  });
+})
+	</script>
+</body>
+</html>

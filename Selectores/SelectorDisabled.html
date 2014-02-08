@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector :disabled</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<form>
+  <input type="text" >
+  <input type="text" disabled="disabled">
+ 
+  <input type="checkbox" >
+  
+</form>
+
+<p>Hemos seleccionado los elementos que sean inputs y que esten desactivados, y les hemos aplicado estilos adicionales</p>
+	<script>
+		$(document).ready(function(){
+ var input = $( "form input:disabled" )
+  .css({
+    background: "yellow",
+    border: "3px red solid"
+  });
+})
+	</script>
+</body>
+</html>
